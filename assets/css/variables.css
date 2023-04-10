@@ -1,0 +1,17 @@
+/*
+----------------------------------------
+Meaning of prefixes:
+
+fs -> font-size
+----------------------------------------
+*/
+
+:root {
+    --clr-black: #000;
+    --clr-white: #fff;
+
+    --fs-default: 2rem;
+    --fs-h1: 5.5rem;
+    --fs-h2: 5rem;
+    --fs-h3: 4.5rem;
+}
