@@ -14,4 +14,6 @@ fs -> font-size
     --fs-h1: 5.5rem;
     --fs-h2: 5rem;
     --fs-h3: 4.5rem;
+
+    --header-offset: 10rem;
 }

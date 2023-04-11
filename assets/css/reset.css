@@ -27,6 +27,24 @@ body {
     background-color: var(--clr-black);
 }
 
+fieldset, button, textarea, input, select {
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+input, label {
+    font-size: 1.8rem;
+}
+
+input:focus {
+    outline: transparent;
+    -webkit-box-shadow: 0px 0px 40px -18px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 40px -18px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 40px -18px rgba(255, 255, 255, 1);
+}
+
 button {
     border: 0;
     background: none;
@@ -37,9 +55,10 @@ button {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-weight: 900;
 }
 
