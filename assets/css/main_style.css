@@ -1,13 +1,15 @@
 .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--clr-black);
-    min-height: 80vh;
-    min-height: 80svh;
-    padding: 3rem;
+    min-height: 50vh;
+    min-height: 50svh;
 }
 
 .content {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -113,7 +115,6 @@
 
 .hero-section .main-title p {
     margin-top: 1rem;
-    font-size: 2.8rem;
 }
 
 .enter-email-container h3 {
@@ -175,11 +176,32 @@
 
 .get-started-btn-wrapper {
     flex: 1;
-    background: #db0c0c;
-    border-radius: 0.5rem;
 }
 
 .get-started-btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    background: #db0c0c;
+    border-radius: 0.5rem;
+}
+
+.get-started-btn:hover {
+    background-color: #ab0000;
+}
+
+.main-title p {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.main-title, .img-wrapper {
+    flex: 1;
+}
+
+[class*="section-"] {
+    box-shadow: inset 0 -1rem #323232;
+}
+
+[class*="section-"] .content {
+    gap: 5rem;
 }
