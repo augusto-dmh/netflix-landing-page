@@ -1,2 +1,2 @@
-# netflix-landing-page
-Uma landing page fictícia para a Netflix
+# netflix-landing-page-clone
+Clone da landing page da Netflix
