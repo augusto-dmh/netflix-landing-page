@@ -1,5 +1,6 @@
 .main-container {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     background: var(--clr-black);
@@ -7,7 +8,7 @@
     min-height: 60svh;
 }
 
-.content {
+.inner-content {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -15,7 +16,7 @@
     margin: 0 auto;
     width: min(120rem, 100%);
     height: 100%;
-    padding: 0 3rem;
+    padding: 6rem 3rem;
 }
 
 [class*="wrapper"] {
@@ -23,7 +24,7 @@
     position: relative;
 }
 
-[class*="wrapper"] > *:not(label) {
+[class*="wrapper"]>*:not(label) {
     width: 100%;
     height: 100%;
 }
@@ -56,11 +57,10 @@
 
 .logo-wrapper {
     width: 16rem;
-    padding: 0.5rem 0;
-    background: #000000cc;
-    -webkit-box-shadow: 0px 0px 15px 10px #000000e6;
-    -moz-box-shadow: 0px 0px 15px 10px #000000e6;
-    box-shadow: 0px 0px 15px 10px #000000e6;
+    background: #000000b8;
+    -webkit-box-shadow: 0px 0px 15px 10px #000000cf;
+    -moz-box-shadow: 0px 0px 15px 10px #000000cf;
+    box-shadow: 0px 0px 15px 10px #000000cf;
 }
 
 .main-header {
@@ -93,11 +93,11 @@
     display: block;
     position: relative;
     color: #c1c1c1;
-    padding: 0.5rem 0;
-    background: #000000cc;
-    -webkit-box-shadow: 0px 0px 15px 10px #000000e6;
-    -moz-box-shadow: 0px 0px 15px 10px #000000e6;
-    box-shadow: 0px 0px 15px 10px #000000e6;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    background: #0000009c;
+    -webkit-box-shadow: 0px 0px 15px 10px #000000cf;
+    -moz-box-shadow: 0px 0px 15px 10px #000000cf;
+    box-shadow: 0px 0px 15px 10px #000000b0;
 }
 
 .main-nav a::after {
@@ -209,11 +209,16 @@
     flex: 1 50%;
 }
 
+#section-n3 .main-img-wrapper {
+    flex: 1 60%;
+}
+
 .main-text {
     flex: 1 50%;
 }
 
 .img-wrapper {
+    /*mudar posicionamento de algumas das imagens pra deixar semelhante ao site principal da netflix*/
     display: flex;
     align-items: center;
 }
@@ -222,7 +227,7 @@
     box-shadow: inset 0 -1rem #323232;
 }
 
-[id*="section-n"] .content {
+[id*="section-n"]:not(#section-n6) .inner-content { /*mexer nisso daqui e trocar nomes de variaveis se preciso*/
     gap: 5rem;
 }
 
@@ -239,7 +244,7 @@
     transform: translate(-50%, -80%);
     background: black;
     border: 0.2rem solid #323232;
-    width: 60%;
+    width: 55%;
     height: 10rem;
     display: flex;
     justify-content: space-between;
@@ -279,6 +284,49 @@
     max-width: 5rem;
 }
 
-/* #section-n5 .main-text {
-    flex: 2;
-} */
+#section-n6 .inner-content {
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.asked-questions {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    font-size: 2.5rem;
+}
+
+.question {
+    background: rgb(45, 45, 45);
+}
+
+.question-link {
+    background: rgb(45, 45, 45);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-link .ion-md-remove {
+    display: none;
+}
+
+.answer {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2.5rem;
+    position: relative;
+    padding: 2.5rem 2rem;
+    background: rgb(55, 55, 55);
+    box-shadow: inset 0 0.1rem #464646;
+    /* overflow: hidden;
+    max-height: 0; 
+    padding: 0; */
+    transition: all 0.2s ease-in-out;
+}
+
+.answer p {
+    line-height: initial;
+}
