@@ -8,7 +8,18 @@ function scopeHeader() {
             header.classList.remove("navbarOnTop");
         }
     }
+    stickyNavbar();
 
     window.addEventListener("scroll", stickyNavbar);
 }
 scopeHeader();
+
+const questionBtn = document.querySelectorAll(".question-btn");
+
+questionBtn.forEach(element => {
+    element.addEventListener("click", () => {
+        element.classList.toggle("activeQuestion");
+
+
+    });
+});
