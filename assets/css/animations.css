@@ -1,29 +1,23 @@
-@keyframes slide {
+@keyframes fade-down {
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes opacity {
+@keyframes fade {
     to {
         opacity: 1;
     }
 }
 
-.main-header {
-    opacity: 0;
-    animation: opacity 2s forwards;
-}
-
-.hero-section .main-text {
+[animate="fade-down"] {
     transform: translateY(-3rem);
     opacity: 0;
-    animation: slide 1s forwards;
+    animation: fade-down 2s forwards;
 }
 
-.enter-email-container {
-    transform: translateY(-3rem);
+[animate="fade"] {
     opacity: 0;
-    animation: slide 1s forwards;
+    animation: fade 2s forwards;
 }
