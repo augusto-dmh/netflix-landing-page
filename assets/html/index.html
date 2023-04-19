@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../css/main_style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="../js/script.js" defer></script>
     <title>Netflix Landing Page</title>
 </head>
@@ -17,10 +19,10 @@
 <body>
     <section class="main-container hero-section">
         <div class="inner-content">
-            <header class="main-header" animate="fade">
+            <header class="main-header">
                 <div class="logo-wrapper">
                     <a href="#" class="logo">
-                        <img src="../img/netflix-logo.png" alt="">
+                        <img src="../img/netflix-logo.png" alt="netflix logo">
                     </a>
                 </div>
     
@@ -33,13 +35,13 @@
                 </nav>
             </header>
     
-            <div class="main-content" animate="fade-down">
+            <div class="main-content" data-aos="fade">
                 <div class="main-text">
                     <h1>Unlimited movies, TV shows, and more!</h1>
                     <p>Watch anywhere. Cancel anytime.</p>
                 </div>
     
-                <div class="enter-email-container" animate="fade-down">
+                <div class="enter-email-container">
                     <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                     <div class="email-inp-btn-container">
                         <div class="email-inp-wrapper">
@@ -62,7 +64,7 @@
                 <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
             </div>
             <div class="main-img-wrapper">
-                <img class="main-img-section" src="../img/img-section-n2.png" alt="image of a tv displaying netflix app" animate="fade-down">
+                <img class="main-img-section" src="../img/img-section-n2.png" alt="image of a tv displaying netflix app" data-aos="fade-left">
             </div>
         </div>
     </section>
@@ -70,7 +72,7 @@
     <section id="section-n3" class="main-container">
         <div class="inner-content">
             <div class="main-img-wrapper">
-                <img class="main-img-section" src="../img/img-section-n3.png" alt="image of a tv displaying netflix app" animate="fade-down">
+                <img class="main-img-section" src="../img/img-section-n3.png" alt="image of a tv displaying netflix app" data-aos="fade-right">
             </div>
             <div class="main-text">
                 <h2>Watch everywhere.</h2>
@@ -86,16 +88,16 @@
                 <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
             </div>
             <div class="main-img-wrapper">
-                <img class="main-img-section" src="../img/img-section-n4.png" alt="image of a tv displaying netflix app" animate="fade-down">
+                <img class="main-img-section" src="../img/img-section-n4.png" alt="image of a tv displaying netflix app" data-aos="fade-left">
             </div>
         </div>
     </section>
 
     <section id="section-n5" class="main-container">
         <div class="inner-content">
-            <div class="download-serie-img-container" animate="fade-down">
+            <div class="download-serie-img-container" animate="fade-right" data-aos="fade-right">
                 <div class="main-img-wrapper  main-img-section-n5-wrapper">
-                    <img class="main-img-section" src="../img/img-section-n5.png" alt="image of a tv displaying netflix app" animate="fade-down">
+                    <img class="main-img-section" src="../img/img-section-n5.png" alt="image of a tv displaying netflix app">
                 </div>
                 <div class="download-serie-animation-container">
                     <div class="stranger-things-text-post-container">
@@ -123,7 +125,7 @@
         <div class="inner-content">
             <h2>Frequently Asked Questions</h2>
             <div class="asked-questions">
-                <div class="question" id="question1" animate="fade-down">
+                <div class="question" id="question1">
                     <button class="question-btn">
                         What is Netflix?
                         <!-- colocar em cada titulo uma tag semantica h -->
@@ -143,7 +145,7 @@
                     </div>
                 </div>
     
-                <div class="question" id="question2" animate="fade-down">
+                <div class="question" id="question2">
                     <a class="question-btn">
                         How much does Netflix cost?
                         <div class="plus-minus-icon">
@@ -158,7 +160,7 @@
                     </div>
                 </div>
     
-                <div class="question" id="question3" animate="fade-down">
+                <div class="question" id="question3">
                     <button class="question-btn">
                         What’s different on an ad-supported plan?
                         <div class="plus-minus-icon">
@@ -178,7 +180,7 @@
                     </div>
                 </div>
     
-                <div class="question" id="question4" animate="fade-down">
+                <div class="question" id="question4">
                     <button class="question-btn">
                         Where can I watch?
                         <div class="plus-minus-icon">
@@ -198,7 +200,7 @@
                     </div>
                 </div>
     
-                <div class="question" id="question5" animate="fade-down">
+                <div class="question" id="question5">
                     <button class="question-btn">
                         How do I cancel?
                         <div class="plus-minus-icon">
@@ -213,7 +215,7 @@
                     </div>
                 </div>
     
-                <div class="question" id="question6" animate="fade-down">
+                <div class="question" id="question6">
                     <button class="question-btn">
                         What can I watch on Netflix?
                         <div class="plus-minus-icon">
@@ -228,7 +230,7 @@
                     </div>
                 </div>
     
-                <div class="question" id="question7" animate="fade-down">
+                <div class="question" id="question7">
                     <button class="question-btn">
                         Is Netflix good for kids?
                         <div class="plus-minus-icon">
@@ -247,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            <div class="enter-email-container" animate="fade-down">
+            <div class="enter-email-container">
                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                 <div class="email-inp-btn-container">
                     <div class="email-inp-wrapper">

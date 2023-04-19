@@ -1,3 +1,9 @@
+AOS.init({
+    duration: 1000,
+    mirror: true,
+    offset: 0,
+});
+
 function scopeHeader() {
     const header = document.querySelector(".main-header");
 

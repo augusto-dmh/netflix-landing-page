@@ -1,6 +1,6 @@
-@keyframes fade-down {
+/* @keyframes fade-right {
     to {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -11,13 +11,13 @@
     }
 }
 
-[animate="fade-down"] {
-    transform: translateY(-3rem);
+[animate="fade-right"] {
+    transform: translateX(-3rem);
     opacity: 0;
-    animation: fade-down 2s forwards;
+    animation: fade-right 2s forwards;
 }
 
 [animate="fade"] {
     opacity: 0;
     animation: fade 2s forwards;
-}
+} */
