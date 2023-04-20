@@ -25,7 +25,7 @@ html {
 body {
     color: var(--clr-white);
     font-family: 'Roboto', sans-serif;
-    font-size: var(--fs-default);
+    font-size: var(--fs-default-pc);
     background-color: var(--clr-black);
 }
 
@@ -79,7 +79,7 @@ h3 {
 }
 
 p {
-    line-height: calc(1.8 * var(--fs-default));
+    line-height: calc(1.8 * var(--fs-default-pc));
 }
 
 a {

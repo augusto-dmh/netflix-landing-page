@@ -1,0 +1,14 @@
+@media (max-width: 960px) {
+    body {
+        font-size: var(--fs-default-mob);
+    }
+
+    footer :is(p, a) {
+        font-size: 1.4rem;
+    }
+
+    .footer-nav {
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+    
+}
