@@ -20,22 +20,24 @@ function scopeHeader() {
 }
 scopeHeader();
 
-//est
-const question = document.querySelectorAll(".question");
+function faqEscopo() {
+    const question = document.querySelectorAll(".question");
 
-question.forEach((item, index) => {
-    const questionBtn = item.querySelector(".question-btn");
-    questionBtn.addEventListener("click", () => {
-        item.classList.toggle("activeQuestion");
+    question.forEach((item, index) => {
+        const questionBtn = item.querySelector(".question-btn");
+        questionBtn.addEventListener("click", () => {
+            item.classList.toggle("activeQuestion");
 
-        removeOpen(index);
+            deactivateOtherQuestions(index);
+        });
     });
-});
 
-function removeOpen(index1) {
-    question.forEach((item2, index2) => {
-        if (index1 != index2) {
-            item2.classList.remove("activeQuestion");
-        }
-    });
+    function deactivateOtherQuestions(selectedQuestionIndex) {
+        question.forEach((item, index) => {
+            if (selectedQuestionIndex != index) {
+                item.classList.remove("activeQuestion");
+            }
+        });
+    }
 }
+faqEscopo();
