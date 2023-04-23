@@ -1,7 +1,7 @@
 AOS.init({
     duration: 1000,
     mirror: true,
-    offset: 100,
+    offset: 20,
 });
 
 function scopeHeader() {
@@ -20,12 +20,22 @@ function scopeHeader() {
 }
 scopeHeader();
 
-const questionBtn = document.querySelectorAll(".question-btn");
+//est
+const question = document.querySelectorAll(".question");
 
-questionBtn.forEach(element => {
-    element.addEventListener("click", () => {
-        element.classList.toggle("activeQuestion");
+question.forEach((item, index) => {
+    const questionBtn = item.querySelector(".question-btn");
+    questionBtn.addEventListener("click", () => {
+        item.classList.toggle("activeQuestion");
 
-
+        removeOpen(index);
     });
 });
+
+function removeOpen(index1) {
+    question.forEach((item2, index2) => {
+        if (index1 != index2) {
+            item2.classList.remove("activeQuestion");
+        }
+    });
+}
