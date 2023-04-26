@@ -23,9 +23,9 @@ html {
 }
 
 body {
-    color: var(--clr-white);
     font-family: 'Roboto', sans-serif;
     font-size: var(--fs-default-pc);
+    color: var(--clr-white);
     background-color: var(--clr-black);
 }
 
@@ -48,18 +48,18 @@ input:focus {
 }
 
 button {
-    border: 0;
-    background: none;
     font-family: inherit;
     font-size: inherit;
+    background: none;
+    border: 0;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
-    display: block;
 }
 
 h1, h2 {
