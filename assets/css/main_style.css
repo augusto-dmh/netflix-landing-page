@@ -199,6 +199,8 @@
 
 .main-img-wrapper {
     flex: 1 50%;
+    box-shadow: #fff;
+    background: radial-gradient(40% 50% at 50% 50%, rgb(161, 29, 82) 0%, rgba(0, 8, 29, 0) 100%);
 }
 
 #section-n3 .main-img-wrapper {
@@ -314,7 +316,7 @@
     transform: translateY(-50%) rotate(180deg);
 }
 
-.faq {
+.faq-accordion {
     display: flex;
     flex-flow: column wrap;
     gap: 1rem;
