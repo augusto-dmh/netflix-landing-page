@@ -78,13 +78,18 @@ h3 {
     font-size: var(--fs-h3);
 }
 
+h4 {
+    font-weight: 400;
+}
+
 p {
-    line-height: calc(1.8 * var(--fs-default-pc));
+    line-height: calc(1.5 * var(--fs-default-pc));
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 div > a {

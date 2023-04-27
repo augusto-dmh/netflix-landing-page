@@ -5,7 +5,7 @@ AOS.init({
 });
 
 function scopeHeader() {
-    const header = document.querySelector(".main-header");
+    const header = document.querySelector(".header");
 
     function stickyNavbar() {
         if (window.scrollY === 0) {

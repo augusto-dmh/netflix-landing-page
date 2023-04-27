@@ -10,11 +10,11 @@ fs -> font-size
     --clr-black: #000;
     --clr-white: #fff;
 
-    --fs-default-pc: 2rem;
+    --fs-default-pc: 2.3rem;
     --fs-default-mob: 2rem;
     --fs-h1: 8rem;
-    --fs-h2: 5rem;
-    --fs-h3: 4.5rem;
+    --fs-h2: 4.5rem;
+    --fs-h3: 4rem;
 
     --header-offset: 10rem;
 }
