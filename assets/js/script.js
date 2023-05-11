@@ -8,10 +8,12 @@ function scopeHeader() {
     const header = document.querySelector(".header");
 
     function stickyNavbar() {
-        if (window.scrollY === 0) {
-            header.classList.add("navbarOnTop");
-        } else {
-            header.classList.remove("navbarOnTop");
+        if (window.innerWidth > 960) {
+            if (window.scrollY === 0) {
+                header.classList.add("navbarOnTop");
+            } else {
+                header.classList.remove("navbarOnTop");
+            }
         }
     }
     stickyNavbar();

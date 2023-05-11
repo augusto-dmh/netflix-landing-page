@@ -10,5 +10,52 @@
     .footer-nav {
         grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
+
+    .header {
+        justify-content: flex-start;
+        background: none;
+        width: 100vw;
+        height: 100vh;
+        width: 100svw;
+        height: 100svh;
+        padding: 0;
+        background: rgba(0, 8, 29, 1);
+    }
+
+    .header__logo-wrapper {
+        display: none;
+    }
+
+    /*deletar depois de mexer no menu*/
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .menu-btn-wrapper {
+        display: block;
+    }
+
+    .header__nav {
+        width: 100%;
+    }
+
+    .header__nav-list {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 0;
+        text-align: center;
+    }
     
+    .header__nav-item {
+        display: block;
+        position: relative;
+        padding: 0 0.5rem 0.5rem 0.5rem;
+        padding: 1rem 0;
+        font-size: 2rem;
+        color: #c1c1c1;
+    }
+    
+    .header__nav-item::after {
+        display: none;
+    }
 }
